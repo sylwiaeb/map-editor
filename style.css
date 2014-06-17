@@ -1,0 +1,48 @@
+html,
+body,
+#map-canvas {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Tahoma', sans-serif;
+}
+
+input {
+    outline: none;
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.toolbar {
+    background: white;
+    border-bottom: 1px solid #808080;
+    z-index: 100;
+}
+#marker, #trip {
+    display: inline-block;
+    position: absolute;
+    width: 80px;
+    border-right: 1px solid #808080;
+    text-align: center;
+    font-size: 22px;
+    padding: 6px 2px;
+    cursor: pointer;
+}
+
+#trip {
+    left: 85px;
+}
+
+#marker.active, #trip.active {
+    background: rgb(151, 151, 151);
+}
+
+#pac-input {
+    width: 100%;
+    padding: 6px;
+    margin-left: 170px;
+    font-size: 18px;
+    border: none;
+}
