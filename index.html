@@ -5,20 +5,75 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta charset="utf-8" />
 
-    <link rel="stylesheet" href="style.css">
+    <!-- mapeditor plugin stuff -->
+    <link rel="stylesheet" href="mapeditor-styles.css">
     <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="http://underscorejs.org/underscore-min.js"></script>
-    <script src="script.js"></script>
+    <script src="mapeditor.js"></script>
+
+    <!-- page stuff -->
     <script>
         $('document').ready(function () {
-            $('#map-canvas').mapeditor();
+            $('#map').mapeditor({
+                        "position": {
+                            "lat": 52.47389130981563,
+                            "lng": 21.55360546875001,
+                            "zoom": 6
+                        },
+                        "markers": [
+                            {
+                                "lat": 53.53867518408384,
+                                "lng": 16.89697265625,
+                                "str": "(53.53867518408384, 16.89697265625)"
+                            },
+                            {
+                                "lat": 52.84093558633913,
+                                "lng": 21.07177734375,
+                                "str": "(52.84093558633913, 21.07177734375)"
+                            },
+                            {
+                                "lat": 51.84765608216454,
+                                "lng": 16.9189453125,
+                                "str": "(51.84765608216454, 16.9189453125)"
+                            }
+                        ],
+                        "path": [
+                            {
+                                "lat": 53.53867518408384,
+                                "lng": 16.89697265625
+                            },
+                            {
+                                "lat": 53.94800423286637,
+                                "lng": 19.4677734375
+                            },
+                            {
+                                "lat": 52.84093558633913,
+                                "lng": 21.07177734375
+                            },
+                            {
+                                "lat": 51.57536261053025,
+                                "lng": 21.148681640625
+                            },
+                            {
+                                "lat": 51.84765608216454,
+                                "lng": 16.9189453125
+                            }
+                        ],
+                        "staticurl": "http://maps.googleapis.com/maps/api/staticmap?size=800x600&s ensor=false&center=52.473891,20.553605&zoom=6&markers=53.538675,16.896973|52.840936,21.071777|51.84765 6,16.918945&path=53.53867518408384,16.89697265625|53.94800423286637,19.4677734375|52.84093558633913, 21.07177734375|51.57536261053025,21.148681640625|51.84765608216454,16.9189453125"
+                    }
+            );
         });
     </script>
+    <style>
+        #map {
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
 
-    <div id="map-canvas"></div>
+<div id="map"></div>
 
 </body>
 </html>

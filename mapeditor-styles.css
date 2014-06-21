@@ -1,0 +1,62 @@
+html,
+body,
+#mapeditor,
+.mapeditor-map {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.mapeditor-toolbar {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #666;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.mapeditor-toolbar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.mapeditor-toolbar li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+    height: 30px;
+}
+
+.mapeditor-marker,
+.mapeditor-trip {
+    border-right: 1px solid #666;
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mapeditor-marker.active,
+.mapeditor-trip.active {
+    background: #999;
+}
+
+.mapeditor-search {
+    height: 30px;
+}
+
+.mapeditor-search-input {
+    padding: 0 5px;
+    margin: 0;
+    height: 30px;
+    width: 300px;
+    font-size: 16px;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    outline: none;
+    border: none;
+    border-right: 1px solid #333;
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
